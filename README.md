@@ -47,3 +47,5 @@ It means that `require("./gen/google/protobuf/api_pb.js")` returns undefined. Th
 Quickly looking at the code of One, maybe the problem is somewhere there https://github.com/onejs/one/blob/d91251ace4eaca86d0388afeddec6342fa157b71/packages/vxrn/react-native-template.js#L189-L250
 
 I'm really not sure, but maybe it's because the importer is `@bufbuild...` while the import map keys are `../../../node_modules/@bufbuild...`.
+
+The reason I'm not sure is because the `console.error(`Module not found "${_mod}" imported by "${importer}"\n${getErrorDetails()}`)` does not appear in my console (but there is too many errors, maybe it appear but is not showed).
