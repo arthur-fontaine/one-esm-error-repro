@@ -48,4 +48,4 @@ Quickly looking at the code of One, maybe the problem is somewhere there https:/
 
 I'm really not sure, but maybe it's because the importer is `@bufbuild...` while the import map keys are `../../../node_modules/@bufbuild...`.
 
-The reason I'm not sure is because the `console.error('Module not found "${_mod}" imported by "${importer}"\n${getErrorDetails()}\')` does not appear in my console (but there is too many errors, maybe it appear but is not showed).
+The reason I'm not sure is because the `console.error('Module not found "${_mod}" imported by "${importer}"\n${getErrorDetails()}\')` is not logged in my terminal.
